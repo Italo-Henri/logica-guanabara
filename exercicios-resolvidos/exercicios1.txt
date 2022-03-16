@@ -1,0 +1,150 @@
+// 1) Escreva um programa que mostre na tela a mensagem "Olá, Mundo!"
+algoritmo "Exercicio1"
+
+var
+  msg: caractere
+
+inicio
+       msg <- ("Hello, World!")
+       Escreva (msg)
+fimalgoritmo
+
+// 2) Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boasvindas para ela:
+algoritmo "Exercicio2"
+var
+    Nome: Caractere
+inicio
+      Escreva ("Digite o seu Nome: ")
+      Leia (Nome)
+      Escreva ("Seja Bem Vindo! ", Nome, ", é um prazer te conhecer.")
+fimalgoritmo
+
+// 3) Crie um programa que leia o nome e o salário de um funcionário,
+// mostrando no final uma mensagem.
+algoritmo "Exercicio3"
+var
+   NomeFnc, Salario: caractere
+
+inicio
+      Escreva ("Digite seu nome: ")
+      Leia (NomeFnc)
+      Escreva ("Digite o seu salario: ")
+      Leia (Salario)
+      Escreva ("O Funcionário: ", NomeFnc, " recebe um salário de ", " R$", Salario, " em Março")
+
+fimalgoritmo
+
+// 4) Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório entre eles.
+algoritmo "Exercicio4"
+var
+   N1, N2: inteiro
+   S: inteiro
+inicio
+      Escreva ("Digite um número: ")
+      Leia (N1)
+      Escreva ("Digite outro número: ")
+      Leia (N2)
+      S <- N1 + N2
+      Escreva ("O resultado da soma entre", N1, " e", N2, " é igual a:", S)
+fimalgoritmo
+
+// 5) Faça um programa que leia as duas notas de um aluno em uma matéria
+// e mostre na tela a sua média na disciplina.
+algoritmo "Exercicio5"
+var
+   Nota1: Real
+   Nota2: Real
+   MediaNota: Real
+inicio
+      Escreva ("Digite a nota da primeira disciplina: ")
+      Leia (Nota1)
+      Escreva ("Digite a nota da segunda disciplina: ")
+      Leia (Nota2)
+      MediaNota <- (Nota1 + Nota2)/2
+      Escreva ("A media entre", Nota1, " e", Nota2, " é igual a", MediaNota)
+
+fimalgoritmo
+
+// 6) Faça um programa que leia um número inteiro e mostre o seu antecessor e seu sucessor.
+algoritmo "Exercicio6"
+var
+   nmr, ant, suc: inteiro
+
+inicio
+      Escreva ("Digite um número: ")
+      Leia (nmr)
+      ant <- ((nmr) - 1)
+      suc <- ((nmr) + 1)
+      Escreval ("O antecessor de", nmr, " é", ant)
+      Escreva ("O sucessor de", nmr, " é", suc)
+fimalgoritmo
+
+// 7) Crie um algoritmo que leia um número real e mostre na tela o seu dobro 
+// e a sua terça parte.
+algoritmo "Exercicio7"
+var
+  nmr, dob, terp: Real
+inicio
+      Escreva ("Digite um número: ")
+      Leia (nmr)
+      dob <- ((nmr) * 2)
+      terp <- ((nmr) /3)
+      Escreval ("O dobro de", nmr, " é", dob)
+      Escreva ("A terça parte de", nmr, " é", terp)
+fimalgoritmo
+
+// 8) Desenvolva um programa que leia uma distância em metros
+// e mostre os valores relativos em outras medidas.
+ algoritmo "Exercicio8"
+ var
+    disM: Real
+    Km, Hm, Dam, dm, cm, mm: Real
+ inicio
+       Escreva ("Digite uma distancia em metros: ")
+       Leia (disM)
+       Km <- disM / 1000
+       Hm <- disM / 100
+       Dam <- disM / 10
+       dm <- disM * 10
+       cm <- disM * 100
+       mm <- disM * 1000
+       Escreval ("A distancia de", disM, "m corresponde a:")
+       Escreval (Km, "Km")
+       Escreval (Hm, "Hm")
+       Escreval (Dam, "Dam")
+       Escreval (dm, "dm")
+       Escreval (cm, "cm")
+       Escreva (mm, "mm")
+       
+ fimalgoritmo
+
+//9) Faça um algoritmo que leia quanto dinheiro uma pessoa tem na carteira (em R$)
+// e mostre quantos dólares ela pode comprar. (2022: U$1 vale R$5,11) - 1 dolar dividido por 5,11 = 0.195
+algoritmo "Exercicio9"
+var
+   DinCart, DinDol: Real
+   
+inicio
+      Escreva ("Ola, Digite aqui quanto dinheiro tem na sua carteira: ")
+      Leia (DinCart)
+      DinDol <- ((DinCart) * 0.195) // R$1 vale 0.195 centavos de dolar 
+      Escreva ("Com R$", DinCart, " Você pode comprar U$", DinDol)
+fimalgoritmo
+
+// 10) Faça um algoritmo que leia a largura e altura de uma parede, calcule e
+// mostre a área a ser pintada e a quantidade de tinta necessária para o serviço,
+//sabendo que cada litro de tinta pinta uma área de 2metros quadrados.
+algoritmo "Exercicio10"
+var
+   larg, comp: real
+   asp, qndt: real
+inicio
+      Escreva ("Digite a LARGURA da parade em metros: ")
+      Leia (larg)
+      Escreva ("Digite o COMPRIMENTO da parade em metros: ")
+      Leia (comp)
+      asp <- (larg * comp)
+      qndt <- (asp / 2)
+      Escreval ("Área a ser pintada é de", asp, "m²")
+      Escreva ("E gastará um total de", qndt, "L de Tinta")
+fimalgoritmo

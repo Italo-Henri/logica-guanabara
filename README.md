@@ -1,3 +1,3 @@
 # logica-guanabara
-	Repositorio com exercicios de lógica de programação <br>
+	Repositorio com exercicios de lógica de programação 
 	Com PORTUGOL.
